@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Functions first
+@import "../node_modules/bootstrap/scss/functions";
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+// html,
+// body {
+//     height: 100%;
+// }
+// body {
+//     margin: 0;
+//     font-family: Roboto, "Helvetica Neue", sans-serif;
+// }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    padding: 8px;
+}
+
+#page-wrap {
+    background-color: #EEE;
+    min-height: 100vh;
+    padding: 0;
+    width: 100vw;
+}
+
+#max-width-column {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 700px;
+    min-height: 100vh;
+    padding: 16px;
+    position: relative;
+}
+
+#top-bar {
+    border-bottom: 2px solid black;
+}
+
+#app-heading {
+    margin-top: 0;
+}
+
+#my-listings-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+#content-wrap {
+    padding: 16px;
+}
+
+.content-box {
+    background-color: #EEE;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.buttons-container {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 16px;
+}
+
+.buttons-container>button {
+    margin-left: 8px;
+}
